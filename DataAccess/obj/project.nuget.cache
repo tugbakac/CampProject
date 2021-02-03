@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zYlvCCRkJm32L/rmBe5f24WFds5KmdF1y2RnzJ6y/PAIT73qPnIe48cqThuZOFix+8O32FzZfHAGMXJh67WXyw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tugba.kac\\source\\repos\\CampProject\\DataAccess\\DataAccess.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tugba.kac\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\tugba.kac\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
