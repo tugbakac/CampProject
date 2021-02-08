@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "BTm2K2hrIU+oTEtmAACrbu9ywjwC+yJs0UXgZ/kJtTaMAXU67IN58jC0czHeRhVwYUxqebYzrCYbbhnzIzGSKQ==",
+  "dgSpecHash": "0VwBMyNYq2LV/fdS0x+d+XwOfivDGZs/EsuyUX+7Bj+aJA9DNxoiDRBwWr6LrCKZ+c5osMC1iqoa2/KuknCr7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tugba.kac\\source\\repos\\CampProject\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\tuba\\Desktop\\CampProject\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\tugba.kac\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\tugba.kac\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

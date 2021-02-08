@@ -10,3 +10,9 @@ C:\Users\tugba.kac\source\repos\CampProject\DataAccess\obj\Debug\netstandard2.0\
 C:\Users\tugba.kac\source\repos\CampProject\DataAccess\bin\Debug\netstandard2.0\Entities.dll
 C:\Users\tugba.kac\source\repos\CampProject\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
 C:\Users\tugba.kac\source\repos\CampProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Users\tuba\Desktop\CampProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\tuba\Desktop\CampProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\tuba\Desktop\CampProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\tuba\Desktop\CampProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\tuba\Desktop\CampProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\tuba\Desktop\CampProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
