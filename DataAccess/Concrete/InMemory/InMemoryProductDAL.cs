@@ -1,8 +1,10 @@
 ﻿using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace DataAccess.Concrete.InMemory
@@ -19,28 +21,28 @@ namespace DataAccess.Concrete.InMemory
                     ProductID=1,
                     ProductName="Bardak",
                     UnitPrice=15,
-                    UnitInStock=3
+                    UnitsInStock=3
                 },
                 new Product
                 {
                     ProductID=2,
                     ProductName="Kamera",
                     UnitPrice=150,
-                    UnitInStock=5
+                    UnitsInStock=5
                 },
                 new Product
                 {
                     ProductID=3,
                     ProductName="Telefon",
                     UnitPrice=500,
-                    UnitInStock=65
+                    UnitsInStock=65
                 },
                 new Product
                 {
                     ProductID=4,
                     ProductName="Klavye",
                     UnitPrice=154,
-                    UnitInStock=1
+                    UnitsInStock=1
                 }
             };
         }
@@ -67,15 +69,30 @@ namespace DataAccess.Concrete.InMemory
             _products.Remove(productToDelete);
         }
 
+        public Product Get(Expression<Func<Product, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Product> GetAll()
         {
             return _products;
 
         }
 
+        public List<Product> GetAll(Expression<Func<Product, bool>> filter = null)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Product> GetAllByCategory(int categoryID)
         {
             return _products.Where(p => p.CategoryID == categoryID).ToList();
+        }
+
+        public List<ProductDetailDTO> GetProductDetails()
+        {
+            throw new NotImplementedException();
         }
 
         public void Update(Product product)
@@ -85,7 +102,7 @@ namespace DataAccess.Concrete.InMemory
             productToUpdate.ProductName = product.ProductName;
             productToUpdate.CategoryID = product.CategoryID;
             productToUpdate.UnitPrice = product.UnitPrice;
-            productToUpdate.UnitInStock = product.UnitInStock;
+            productToUpdate.UnitsInStock = product.UnitsInStock;
 
         }
     }
