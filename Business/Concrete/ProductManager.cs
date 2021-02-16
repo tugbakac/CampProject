@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.Constants;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
@@ -17,24 +19,44 @@ namespace Business.Concrete
         {
             _productDAL = productDAL;
         }
-        public List<Product> GetAll()
+
+        public IResult Add(Product product)
         {
-            return _productDAL.GetAll();
+            if (product.ProductName.Length < 2)
+            {
+                return new ErrorResult(Messages.ProductNameInvalid);
+            }
+            _productDAL.Add(product);
+            return new SuccessResult(Messages.ProductAdded);//set vermediğim için ctor da eklemem lazım
         }
 
-        public List<Product> GetAllByCategoryID(int id)
+        public IDataResult<List<Product>> GetAll()            
         {
-            return _productDAL.GetAll(p => p.CategoryID == id);
+            if (DateTime.Now.Hour==22)
+            {
+                return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
+            }
+            return new DataResult<List<Product>>(_productDAL.GetAll(),Messages.ProductsListed);
         }
 
-        public List<Product> GetByUnitPrice(decimal min, decimal max)
+        public IDataResult<List<Product>> GetAllByCategoryID(int id)
         {
-            return _productDAL.GetAll(p => p.UnitPrice >= min && p.UnitPrice <= max);
+            return new SuccessDataResult<List<Product>>(_productDAL.GetAll(p => p.CategoryID == id));
         }
 
-        public List<ProductDetailDTO> GetProductDetails()
+        public IDataResult<Product> GetById(int productId)
         {
-            return _productDAL.GetProductDetails();
+            return new SuccessDataResult<Product>(_productDAL.Get(p => p.ProductID == productId));
+        }
+
+        public IDataResult<List<Product>> GetByUnitPrice(decimal min, decimal max)
+        {
+            return new SuccessDataResult<List<Product>>(_productDAL.GetAll(p => p.UnitPrice >= min && p.UnitPrice <= max));
+        }
+
+        public IDataResult<List<ProductDetailDTO>> GetProductDetails()
+        {
+            return new SuccessDataResult<List<ProductDetailDTO>>(_productDAL.GetProductDetails());
         }
     }
 }
