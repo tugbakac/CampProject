@@ -30,3 +30,11 @@ C:\Users\tugba.kac\Documents\GitHub\CampProject\DataAccess\bin\Debug\netstandard
 C:\Users\tugba.kac\Documents\GitHub\CampProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
 C:\Users\tugba.kac\Documents\GitHub\CampProject\DataAccess\bin\Debug\netstandard2.0\Core.dll
 C:\Users\tugba.kac\Documents\GitHub\CampProject\DataAccess\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\tuba\Desktop\CampProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\tuba\Desktop\CampProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\tuba\Desktop\CampProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\tuba\Desktop\CampProject\DataAccess\bin\Debug\netstandard2.0\Core.dll
+C:\Users\tuba\Desktop\CampProject\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\tuba\Desktop\CampProject\DataAccess\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\tuba\Desktop\CampProject\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\tuba\Desktop\CampProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete

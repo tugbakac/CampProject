@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tugba.kac\\Documents\\GitHub\\CampProject\\Entities\\Entities.csproj": {}
+    "C:\\Users\\tuba\\Desktop\\CampProject\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tugba.kac\\Documents\\GitHub\\CampProject\\Core\\Core.csproj": {
+    "C:\\Users\\tuba\\Desktop\\CampProject\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tugba.kac\\Documents\\GitHub\\CampProject\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\tuba\\Desktop\\CampProject\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\tugba.kac\\Documents\\GitHub\\CampProject\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\tugba.kac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tugba.kac\\Documents\\GitHub\\CampProject\\Core\\obj\\",
+        "projectPath": "C:\\Users\\tuba\\Desktop\\CampProject\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\tuba\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tuba\\Desktop\\CampProject\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tugba.kac\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\tuba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -44,6 +43,22 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Autofac.Extras.DynamicProxy": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.5.2, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.11, )"
@@ -65,26 +80,25 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tugba.kac\\Documents\\GitHub\\CampProject\\Entities\\Entities.csproj": {
+    "C:\\Users\\tuba\\Desktop\\CampProject\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tugba.kac\\Documents\\GitHub\\CampProject\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\tuba\\Desktop\\CampProject\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\tugba.kac\\Documents\\GitHub\\CampProject\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\tugba.kac\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tugba.kac\\Documents\\GitHub\\CampProject\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\tuba\\Desktop\\CampProject\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\tuba\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tuba\\Desktop\\CampProject\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tugba.kac\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\tuba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -97,8 +111,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\tugba.kac\\Documents\\GitHub\\CampProject\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\tugba.kac\\Documents\\GitHub\\CampProject\\Core\\Core.csproj"
+              "C:\\Users\\tuba\\Desktop\\CampProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\tuba\\Desktop\\CampProject\\Core\\Core.csproj"
               }
             }
           }
@@ -130,7 +144,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
         }
       }
     }

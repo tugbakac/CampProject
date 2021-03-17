@@ -28,3 +28,6 @@ C:\Users\tugba.kac\Documents\GitHub\CampProject\Entities\obj\Debug\netstandard2.
 C:\Users\tugba.kac\Documents\GitHub\CampProject\Entities\bin\Debug\netstandard2.0\Core.dll
 C:\Users\tugba.kac\Documents\GitHub\CampProject\Entities\bin\Debug\netstandard2.0\Core.pdb
 C:\Users\tugba.kac\Documents\GitHub\CampProject\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
+C:\Users\tuba\Desktop\CampProject\Entities\bin\Debug\netstandard2.0\Core.dll
+C:\Users\tuba\Desktop\CampProject\Entities\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\tuba\Desktop\CampProject\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
