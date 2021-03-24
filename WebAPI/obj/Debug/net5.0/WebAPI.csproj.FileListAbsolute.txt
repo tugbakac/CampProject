@@ -131,3 +131,4 @@ C:\Users\tuba\Desktop\CampProject\WebAPI\bin\Debug\net5.0\Autofac.Extras.Dynamic
 C:\Users\tuba\Desktop\CampProject\WebAPI\bin\Debug\net5.0\Castle.Core.dll
 C:\Users\tuba\Desktop\CampProject\WebAPI\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll
 C:\Users\tuba\Desktop\CampProject\WebAPI\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\tuba\Desktop\CampProject\WebAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
