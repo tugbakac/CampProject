@@ -2,6 +2,8 @@
 using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
+using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Transaction;
 using Core.Aspects.Autofac.Validation;
 using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Business;
@@ -30,6 +32,7 @@ namespace Business.Concrete
         }
         [SecuredOperation("admin,editor")]
         [ValidationAspect(typeof(ProductValidator))]
+        [CacheRemoveAspect("IProductService.Get")]
         public IResult Add(Product product)
         {
             //REFACTORY
@@ -57,9 +60,9 @@ namespace Business.Concrete
             ////business codes 
             //_productDAL.Add(product);
             //return new SuccessResult(Messages.ProductAdded);//set vermediğim için ctor da eklemem lazım
-            IResult result = BusinessRules.Run(CheckIfProductNameExist(product.ProductName), CheckIfProductCountOfCategoryCorrect(product.CategoryID),CheckIfCategoryCountCorrect());
+            IResult result = BusinessRules.Run(CheckIfProductNameExist(product.ProductName), CheckIfProductCountOfCategoryCorrect(product.CategoryID), CheckIfCategoryCountCorrect());
 
-            if (result!=null)
+            if (result != null)
             {
                 return result;
             }
@@ -76,6 +79,7 @@ namespace Business.Concrete
         }
 
         [ValidationAspect(typeof(ProductValidator))]
+        [CacheRemoveAspect("IProductService.Get")]
         public IResult Update(Product product)
         {
             if (CheckIfProductCountOfCategoryCorrect(product.ProductID).Success)
@@ -102,7 +106,7 @@ namespace Business.Concrete
         private IResult CheckIfCategoryCountCorrect()
         {
             var res = _categoryService.GetAll();
-            if (res.Data.Count>15)
+            if (res.Data.Count > 15)
             {
                 return new ErrorResult(Messages.CategoryLimitExceded);
             }
@@ -118,7 +122,7 @@ namespace Business.Concrete
             }
             return new SuccessResult();
         }
-
+        [CacheAspect]
         public IDataResult<List<Product>> GetAll()
         {
             //if (DateTime.Now.Hour == 16)
@@ -133,6 +137,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Product>>(_productDAL.GetAll(p => p.CategoryID == id));
         }
 
+        [CacheAspect]
         public IDataResult<Product> GetById(int productId)
         {
             return new SuccessDataResult<Product>(_productDAL.Get(p => p.ProductID == productId));
@@ -146,6 +151,18 @@ namespace Business.Concrete
         public IDataResult<List<ProductDetailDTO>> GetProductDetails()
         {
             return new SuccessDataResult<List<ProductDetailDTO>>(_productDAL.GetProductDetails());
+        }
+
+        [TransactionScopeAspect]
+        public IResult AddTransactionalTest(Product product)
+        {
+            Add(product);
+            if (product.UnitPrice < 10)
+            {
+                throw new Exception("");
+            }
+            Add(product);
+            return null;
         }
     }
 }
